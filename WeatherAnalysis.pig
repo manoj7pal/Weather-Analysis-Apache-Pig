@@ -5,6 +5,7 @@ TEMP = LOAD 'datasets/Temperature.txt' using PigStorage(' ') as (year: int, temp
 
 --Temp of year 2011
 TEMP_2011 = FILTER TEMP BY year==2011;	
+--TEMP_2011 = FILTER TEMP BY year IN (2011, 2012, 2013);
 
 --Group by Year
 GROUP_TEMP = GROUP TEMP BY year;
