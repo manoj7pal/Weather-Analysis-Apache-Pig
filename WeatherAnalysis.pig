@@ -1,5 +1,5 @@
 --Load Temperature Dataset
-TEMP = LOAD 'datasets/Temperature' using PigStorage(' ') as (year: int, temp:int);
+TEMP = LOAD 'datasets/Temperature.txt' using PigStorage(' ') as (year: int, temp:int);
 
 -- DUMP TEMP;
 
